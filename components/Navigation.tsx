@@ -157,6 +157,7 @@ export default function Navigation() {
       <div
         className={`mobile-drawer ${mobileOpen ? 'open' : ''}`}
         aria-hidden={!mobileOpen}
+        inert={!mobileOpen ? true : undefined}
       >
         <nav aria-label="Mobile navigation">
           {[
